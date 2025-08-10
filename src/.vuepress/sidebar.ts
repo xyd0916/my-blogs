@@ -11,7 +11,7 @@ export default sidebar({
       children: "structure",
     },
     {
-      text: "文章",
+      text: "WebGIS全栈开发",
       icon: "book",
       prefix: "posts/",
       children: "structure",

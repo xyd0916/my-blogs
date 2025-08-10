@@ -3,10 +3,12 @@ home: true
 layout: Blog
 icon: house
 title: 博客主页
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-heroText: 你博客的名称
+heroImage: https://tiebapic.baidu.com/forum/pic/item/5eb8dffc1e178a829a85e483b003738da877e8f3.jpg?tbpicau=2025-08-21-05_018a47d21ea19747c308d32a4cacde5f
+
+bgImage: "/assets/images/鲜衣怒马.jpg"
+heroText: 带着黄昏出逃的博客 
 heroFullScreen: true
-tagline: 你可以在这里放置你的口号与标语
+tagline: 怀瑾握瑜，风禾尽起
 projects:
   - icon: folder-open
     name: 项目名称
@@ -18,10 +20,10 @@ projects:
     desc: 链接详细描述
     link: https://链接地址
 
-  - icon: book
-    name: 书籍名称
-    desc: 书籍详细描述
-    link: https://你的书籍链接
+  - icon: https://ts2.tc.mm.bing.net/th/id/OIP-C.Z9upUdbOLCMaQ5gXA3jmOAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3
+    name: 目前在读：Spring实战
+    desc: 一本经典而实用的Spring学习指南，介绍了Spring使用框架、Spring Boot，以及Spring系统中的其他组成部分。
+    link: https://www.epubit.com/bookDetails?id=UB7d862361ccf21&typeName=%E6%90%9C%E7%B4%A2
 
   - icon: newspaper
     name: 文章名称
@@ -29,8 +31,8 @@ projects:
     link: https://你的文章链接
 
   - icon: user-group
-    name: 伙伴名称
-    desc: 伙伴详细介绍
+    name: 友情链接
+    desc: 伙伴详细介绍：一名待定人士
     link: https://你的伙伴链接
 
   - icon: https://theme-hope-assets.vuejs.press/logo.svg
@@ -38,11 +40,4 @@ projects:
     desc: 自定义详细介绍
     link: https://你的自定义链接
 
-footer: 自定义你的页脚文字
----
-
-这是一个博客主页的案例。
-
-要使用此布局，你应该在页面前端设置 `layout: Blog` 和 `home: true`。
-
-相关配置文档请见 [博客主页](https://theme-hope.vuejs.press/zh/guide/blog/home.html)。
+footer: 怀瑾握瑜，风禾尽起

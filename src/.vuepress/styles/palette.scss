@@ -1,1 +1,83 @@
-// you can change colors here
+// 文字颜色 - 暖冷平衡的可读性色调
+$vp-c-text: (
+  light: #374151,  // 深棕灰主文本
+  dark: #f3f4f6,  // 暖调浅灰文本
+) !default;
+
+$vp-c-text-mute: (
+  light: #6b7280,  // 中棕灰静音文本
+  dark: #9ca3af,  // 中灰静音文本
+) !default;
+
+$vp-c-text-subtle: (
+  light: #9ca3af,  // 浅棕灰细微文本
+  dark: #d1d5db,  // 浅灰细微文本
+) !default;
+
+// 背景颜色 - 温润质感的基础色
+$vp-c-bg: (
+  light: #fffbf5,  // 米白主背景（带暖调）
+  dark: #111827,  // 深棕黑主背景
+) !default;
+
+$vp-c-bg-alt: (
+  light: #fff4e6,  // 浅橙米备用背景
+  dark: #1f2937,  // 深棕备用背景
+) !default;
+
+$vp-c-bg-elv: (
+  light: #ffffff,  // 纯白浮动背景
+  dark: #374151,  // 深棕浮动背景
+) !default;
+
+// 阴影 - 低饱和柔和阴影
+$vp-c-shadow: (
+  light: rgba(251, 146, 60, 0.15),  // 暖橙阴影
+  dark: rgba(124, 58, 237, 0.2)     // 紫调阴影
+) !default;
+
+// 强调色 - 冷暖碰撞的交互色
+$vp-c-accent: #f97316 !default;  // 珊瑚橙主强调
+
+$vp-c-accent-hover: (
+  light: #fb923c,  // 亮橙 hover
+  dark: #fdba74,   // 浅橙 hover
+) !default;
+
+$vp-c-accent-bg: #7c3aed !default;  // 紫调强调背景
+
+$vp-c-accent-text: #ffffff !default;  // 强调文本（确保对比度）
+
+$vp-c-accent-soft: (
+  light: rgba(249, 115, 22, 0.1),  // 半透橙
+  dark: rgba(124, 58, 237, 0.15)   // 半透紫
+) !default;
+
+// 边框 - 低饱和过渡色
+$vp-c-border: (
+  light: #fed7aa,  // 浅橙边框
+  dark: #5b21b6,  // 深紫边框
+) !default;
+
+$vp-c-divider: (
+  light: #ffedd5,  // 极浅橙分隔线
+  dark: #4c1d95,  // 暗紫分隔线
+) !default;
+
+// 控件 - 温润交互色
+$vp-c-control: (
+  light: rgba(249, 115, 22, 0.08),  // 浅橙控件
+  dark: rgba(124, 58, 237, 0.1)     // 浅紫控件
+) !default;
+
+$vp-c-control-hover: (
+  light: rgba(249, 115, 22, 0.15),  // 暖橙 hover
+  dark: rgba(124, 58, 237, 0.2)     // 紫调 hover
+) !default;
+
+// 布局与动画
+$navbar-height: 4rem !default;
+$navbar-mobile-height: 3.5rem !default;
+
+$vp-t-color: "0.3s ease-in-out" !default;  // 舒缓颜色过渡
+$vp-t-transform: "0.4s cubic-bezier(0.25, 0.1, 0.25, 1)" !default;  // 自然曲线动画

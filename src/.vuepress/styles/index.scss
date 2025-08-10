@@ -1,1 +1,245 @@
-// place your custom styles here
+/* 全局动画定义 */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes subtlePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+/* 粒子拖尾动画 */
+@keyframes particleMain {
+  0% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+}
+
+@keyframes particleSecondary {
+  0% {
+    opacity: 0.7;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+/* 基础样式增强 */
+:root {
+  --vp-gradient-warm: linear-gradient(135deg, #f97316 0%, #fdba74 100%);
+  --vp-gradient-cool: linear-gradient(135deg, #62f0c8 0%, #8bb4fa 100%);
+  --vp-gradient-mixed: linear-gradient(135deg, #f9e616 0%, #4ae5e8 100%);
+  --vp-particle-main: radial-gradient(circle, #f97316, #35dbfc 70%);
+  --vp-particle-secondary: radial-gradient(circle, rgba(74, 222, 128, 0.8), rgba(168, 125, 242, 0.4) 60%);
+}
+
+/* 粒子拖尾核心样式 */
+.mouse-particle {
+  position: fixed;
+  pointer-events: none;
+  border-radius: 50%;
+  z-index: 9999;
+  opacity: 0;
+  transform: scale(0);
+  will-change: transform, opacity; /* 优化动画性能 */
+}
+
+/* 主粒子（高亮核心） */
+.mouse-particle.main {
+  background: var(--vp-particle-main);
+  animation: particleMain 0.8s ease-out forwards;
+}
+
+/* 次级粒子（扩散拖尾） */
+.mouse-particle.secondary {
+  background: var(--vp-particle-secondary);
+  animation: particleSecondary 1.2s ease-out forwards;
+}
+
+/* 链接交互 - 渐变下划线+微妙放大 */
+a {
+  position: relative;
+  transition: all var(--vp-t-color);
+
+  &:hover {
+    color: var(--vp-c-accent);
+    transform: scale(1.02);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--vp-gradient-mixed);
+    transition: width var(--vp-t-transform);
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+/* 移除导航栏中当前页面链接的下划线及相关样式 */
+.navbar .nav-item.active a {
+  &:hover {
+    transform: none;
+  }
+  
+  &::after {
+    display: none;
+  }
+  
+  color: var(--vp-c-accent) !important;
+  font-weight: 600;
+}
+
+/* 导航栏样式 */
+.navbar {
+  position: relative;
+  box-shadow: 0 2px 10px var(--vp-c-shadow);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--vp-gradient-mixed);
+  }
+
+  .site-name {
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    background: var(--vp-gradient-mixed);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: subtlePulse 6s infinite;
+  }
+}
+
+/* 代码块样式 */
+div[class*="language-"] {
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-border);
+  box-shadow: 0 4px 12px var(--vp-c-shadow);
+  transition: all var(--vp-t-transform);
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--vp-gradient-mixed);
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px var(--vp-c-shadow);
+  }
+}
+
+/* 按钮样式 */
+.vp-button {
+  background: var(--vp-gradient-warm) !important;
+  border: none !important;
+  transition: all var(--vp-t-transform);
+
+  &:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 15px rgba(249, 115, 22, 0.25);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+/* 卡片组件样式 */
+.vp-card {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid var(--vp-c-border);
+  box-shadow: 0 3px 10px var(--vp-c-shadow);
+  transition: all var(--vp-t-transform);
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--vp-gradient-mixed);
+    transform: scaleX(0);
+    transition: transform var(--vp-t-transform);
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px var(--vp-c-shadow);
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg-alt);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-gradient-mixed);
+  border-radius: 4px;
+  transition: all var(--vp-t-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-gradient-cool);
+}
+
+/* 深色模式适配 */
+@media (prefers-color-scheme: dark) {
+  .vp-button {
+    background: var(--vp-gradient-cool) !important;
+    box-shadow: 0 6px 15px rgba(124, 58, 237, 0.25);
+  }
+
+  /* 深色模式下增强粒子可见性 */
+  .mouse-particle.main {
+    background: radial-gradient(circle, #fdba74, #a78bfa 70%);
+  }
+  
+  .mouse-particle.secondary {
+    background: radial-gradient(circle, rgba(74, 222, 128, 0.9), rgba(124, 58, 237, 0.5) 60%);
+  }
+}
+    

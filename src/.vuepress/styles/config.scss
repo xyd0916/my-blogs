@@ -1,2 +1,27 @@
-// you can change config here
-$theme-color: #096dd9;
+// 响应式布局断点
+$pc: 1920px !default;
+$laptop: 1280px !default;
+$pad: 959px !default;
+$tablet: 719px !default;
+$mobile: 419px !default;
+
+/* 主题色 - 暖橙与紫的融合主色调 */
+$theme-color: #f97316 !default;  // 柔和珊瑚橙
+
+/* 冷暖融合颜色列表 - 自然过渡色系 */
+$colors:
+  #f97316, #fb923c, #fdba74,  // 暖橙渐变
+  #a78bfa, #7c3aed, #6d28d9,  // 紫蓝渐变
+  #4ade80, #22c55e, #16a34a   // 低饱和绿
+ !default;
+
+/* 代码块颜色配置 */
+$code-color: (
+  light: #4b5563,  // 深棕灰文字
+  dark: #f3f4f6,  // 暖调浅灰文字
+) !default;
+
+$code-bg-color: (
+  light: #fffbf5,  // 米白背景
+  dark: #1f2937,  // 深棕黑背景
+) !default;

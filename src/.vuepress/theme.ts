@@ -7,7 +7,7 @@ export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
   author: {
-    name: "Mr.Hope",
+    name: "带着黄昏出逃",
     url: "https://mister-hope.com",
   },
 
@@ -29,39 +29,20 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
-    description: "一个前端开发者",
+    name: "带着黄昏出逃",
+    avatar: "https://xyd0916.github.io/lakes/%E5%A4%B4%E5%83%8F.jpg",
+    description: "一名GISer",
     intro: "/intro.html",
     medias: {
-      Baidu: "https://example.com",
-      BiliBili: "https://example.com",
-      Bitbucket: "https://example.com",
-      Dingding: "https://example.com",
+      BiliBili: "https://space.bilibili.com/526275554?spm_id_from=333.1007.0.0",
       Discord: "https://example.com",
-      Dribbble: "https://example.com",
       Email: "mailto:info@example.com",
-      Evernote: "https://example.com",
-      Facebook: "https://example.com",
-      Flipboard: "https://example.com",
       Gitee: "https://example.com",
       GitHub: "https://example.com",
-      Gitlab: "https://example.com",
       Gmail: "mailto:info@example.com",
-      Instagram: "https://example.com",
-      Lark: "https://example.com",
-      Lines: "https://example.com",
-      Linkedin: "https://example.com",
-      Pinterest: "https://example.com",
-      Pocket: "https://example.com",
       QQ: "https://example.com",
       Qzone: "https://example.com",
-      Reddit: "https://example.com",
-      Rss: "https://example.com",
       Steam: "https://example.com",
-      Twitter: "https://example.com",
-      Wechat: "https://example.com",
-      Weibo: "https://example.com",
-      Whatsapp: "https://example.com",
-      Youtube: "https://example.com",
       Zhihu: "https://example.com",
       VuePressThemeHope: {
         icon: "https://theme-hope-assets.vuejs.press/logo.svg",
@@ -86,7 +67,7 @@ export default hopeTheme({
   },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
-  // hotReload: true,
+  hotReload: true,
 
   // 此处开启了很多功能用于演示，你应仅保留用到的功能。
   markdown: {
@@ -163,6 +144,44 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     blog: true,
+
+
+    
+
+        notice: [
+      {
+        path: "/",
+        title: "公告板",
+        content: "欢迎关注我的博客！",
+        actions: [
+          {
+            text: "看看你是谁！",
+            link: "/intro",
+            type: "primary",
+          },
+          { text: "好的" },
+        ],
+      },
+      {
+        path: "/posts/",
+        title: "公告栏",
+        content: "本人才疏学浅，博客内容若有错误，恳请各位大佬批评指正",
+        actions: [
+          { text: "已阅" },
+          {
+            text: "有误",
+            link: "https://theme-hope.vuejs.press/",
+            type: "primary",
+          },
+          
+        ],
+      },
+    ],
+
+
+
+
+
 
     // 启用之前需安装 @waline/client
     // 警告: 这是一个仅供演示的测试服务，在生产环境中请自行部署并使用自己的服务！
