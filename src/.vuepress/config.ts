@@ -3,7 +3,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/my-blogs/",
+
 
   lang: "zh-CN",
   title: "带着黄昏出逃",
