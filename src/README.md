@@ -3,17 +3,17 @@ home: true
 layout: Blog
 icon: house
 title: 博客主页
-heroImage: https://tiebapic.baidu.com/forum/pic/item/5eb8dffc1e178a829a85e483b003738da877e8f3.jpg?tbpicau=2025-08-21-05_018a47d21ea19747c308d32a4cacde5f
 
 bgImage: "/assets/images/鲜衣怒马.jpg"
+
 heroText: 带着黄昏出逃的博客 
 heroFullScreen: true
 tagline: 怀瑾握瑜，风禾尽起
 projects:
-  - icon: folder-open
-    name: 项目名称
-    desc: 项目详细描述
-    link: https://你的项目链接
+  - icon: "/assets/icon/遥感.png"
+    name: 湖泊水华遥感数据分析系统
+    desc: 系统核心功能包括遥感影像加载与预处理、浮游藻类指数计算与水华面积分级、基于LSTM与神经网络的时序分析与预测。采用 Python 技术栈（如 scikit-learn, PIL,OpenCV）模块化开发。
+    link: "/projectAction/shygfx"
 
   - icon: link
     name: 链接名称

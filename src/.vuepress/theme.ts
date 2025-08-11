@@ -11,7 +11,7 @@ export default hopeTheme({
     url: "https://mister-hope.com",
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/assets/icon/黄昏.png",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
@@ -54,7 +54,7 @@ export default hopeTheme({
   // 加密配置
   encrypt: {
     config: {
-      "/demo/encrypt.html": {
+      "/ArcGIS_Pro/encrypt.html": {
         hint: "Password: 1234",
         password: "1234",
       },
@@ -76,10 +76,17 @@ export default hopeTheme({
     codeTabs: true,
     component: true,
     demo: true,
+    // 启用 figure
     figure: true,
     gfm: true,
+    // 启用图片懒加载
     imgLazyload: true,
+    // 启用图片标记
+    imgMark: true,
+    // 启用图片大小
     imgSize: true,
+    //在图片替代文字后面添加 widthxheight(单位为像素)，并用 | 分隔
+    obsidianImgSize: true,
     include: true,
     mark: true,
     plantuml: true,

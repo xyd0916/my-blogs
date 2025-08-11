@@ -2,7 +2,11 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/demo/",
+  {
+    text: "AcGIS Pro从入门到吃土",
+    icon: "/assets/icon/ArcGIS Pro.png",
+    link: "/ArcGIS_Pro/",
+  },
   {
     text: "WebGIS全栈开发",
     icon: "pen-to-square",
@@ -53,10 +57,15 @@ export default navbar([
     ],
   },
   {
-    text: "V2 文档",
+    text: "项目经历",
     icon: "book",
-    link: "https://theme-hope.vuejs.press/zh/",
+    link: "/projectAction/",
+    prefix: "/projectAction/",
+    children: [
+      { text: "湖泊水华遥感数据分析系统", icon: "/assets/icon/遥感.png", link: "shygfx" },
+      ]
   },
+
   {
     text: "个人档案",
     icon: "newspaper",

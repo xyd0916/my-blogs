@@ -4,16 +4,22 @@ export default sidebar({
   "/": [
     "",
     {
-      text: "如何使用",
+      text: "AcGIS Pro从入门到吃土",
       icon: "laptop-code",
-      prefix: "demo/",
-      link: "demo/",
+      prefix: "ArcGIS_Pro/",
+      link: "ArcGIS_Pro/",
       children: "structure",
     },
     {
       text: "WebGIS全栈开发",
       icon: "book",
       prefix: "posts/",
+      children: "structure",
+    },
+    {
+      text: "项目实战",
+      icon: "book",
+      prefix: "projectAction/",
       children: "structure",
     },
     "intro",
