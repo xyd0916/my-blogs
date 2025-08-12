@@ -1,5 +1,5 @@
 ---
-cover: /assets/images/cover2.jpg
+cover: /assets/images/GIS.png
 icon: pen-to-square
 date: 2022-01-12
 category:

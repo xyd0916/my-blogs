@@ -39,15 +39,8 @@ export default hopeTheme({
       Email: "mailto:info@example.com",
       Gitee: "https://example.com",
       GitHub: "https://example.com",
-      Gmail: "mailto:info@example.com",
-      QQ: "https://example.com",
       Qzone: "https://example.com",
       Steam: "https://example.com",
-      Zhihu: "https://example.com",
-      VuePressThemeHope: {
-        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
-        link: "https://theme-hope.vuejs.press",
-      },
     },
   },
 
@@ -76,6 +69,10 @@ export default hopeTheme({
     codeTabs: true,
     component: true,
     demo: true,
+    //选项卡
+    tabs: true,
+    //GFM 警告
+    alert: true,
     // 启用 figure
     figure: true,
     gfm: true,
@@ -106,7 +103,6 @@ export default hopeTheme({
     ],
     sub: true,
     sup: true,
-    tabs: true,
     tasklist: true,
     vPre: true,
 
