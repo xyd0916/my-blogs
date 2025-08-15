@@ -3,7 +3,6 @@ home: true
 layout: Blog
 icon: house
 title: 博客主页
-
 bgImage: "/assets/images/鲜衣怒马.jpg"
 
 heroText: 带着黄昏出逃的博客 
