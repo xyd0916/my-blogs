@@ -7,7 +7,7 @@ category:
 tag:
   - 红
   - 圆
-star: true
+star: 5
 sticky: true
 ---
 
