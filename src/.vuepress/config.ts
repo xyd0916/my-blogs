@@ -2,7 +2,6 @@ import { defineUserConfig } from "vuepress";
 import { photoSwipePlugin } from '@vuepress/plugin-photo-swipe'
 import { getDirname, path } from "vuepress/utils";
 import theme from "./theme.js";
-
 const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({

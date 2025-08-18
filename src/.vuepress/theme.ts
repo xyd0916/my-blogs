@@ -151,6 +151,19 @@ export default hopeTheme({
 
     
 
+
+
+    comment: {
+      // 选择一个评论服务
+      provider: "Giscus",
+      // giscus 选项
+      repo: "xyd0916/my-blogs",
+      repoId: "R_kgDOPbX66g", 
+      category: "General",
+      categoryId: "DIC_kwDOPbX66s4CuS2E",
+    },
+    
+
         notice: [
       {
         path: "/",
