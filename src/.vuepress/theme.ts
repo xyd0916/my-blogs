@@ -124,8 +124,8 @@ export default hopeTheme({
 
     // insert component easily
 
-    // 在启用之前安装 echarts
-    // echarts: true,
+    
+    echarts: true,
 
     // 在启用之前安装 flowchart.ts
     // flowchart: true,
@@ -152,9 +152,8 @@ export default hopeTheme({
     
 
 
-
+    //评论服务
     comment: {
-      // 选择一个评论服务
       provider: "Giscus",
       // giscus 选项
       repo: "xyd0916/my-blogs",
@@ -194,17 +193,6 @@ export default hopeTheme({
       },
     ],
 
-
-
-
-
-
-    // 启用之前需安装 @waline/client
-    // 警告: 这是一个仅供演示的测试服务，在生产环境中请自行部署并使用自己的服务！
-    // comment: {
-    //   provider: "Waline",
-    //   serverURL: "https://waline-comment.vuejs.press",
-    // },
 
     components: {
       components: ["Badge", "VPCard"],
