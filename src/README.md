@@ -1,9 +1,9 @@
 ---
 home: true
-layout: Blog
+layout: Home
 icon: house
 title: 博客主页
-bgImage: "/assets/images/鲜衣怒马.jpg"
+bgImage: "https://tu.ltyuanfang.cn/api/fengjing.php"
 
 heroText: 带着黄昏出逃的博客 
 heroFullScreen: true

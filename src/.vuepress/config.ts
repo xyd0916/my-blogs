@@ -22,5 +22,6 @@ export default defineUserConfig({
     "@PostCard": path.resolve(__dirname, "components/PostCard.vue"),
     "@SearchablePostList": path.resolve(__dirname, "components/SearchablePostList.vue"),
 
+
   },
 });

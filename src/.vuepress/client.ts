@@ -1,7 +1,13 @@
 import { defineClientConfig } from "vuepress/client";
 import { onMounted } from "vue";
-
+import Home from "./layouts/HomePage.vue";
+// 客户端配置文件
 export default defineClientConfig({
+  layouts: {
+    // 覆盖默认的主页布局
+    Home,
+  },
+
   setup() {
     onMounted(() => {
       // 调试确认代码运行

@@ -5,7 +5,7 @@ cover: /assets/images/cover3.jpg
 home: true
 portfolio: true
 titles: "在读大学生"
-bgImage: /assets/images/暗藏杀机.jpg
+bgImage: https://api.bimg.cc/random
 ---
 # 介绍页
 
