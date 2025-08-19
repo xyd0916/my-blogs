@@ -2,7 +2,7 @@
 title: 湖泊水华遥感数据分析系统
 icon: /assets/icon/遥感.png
 category:
-  - 水果
+  - 项目实战
 tag:
   - 红
 ---

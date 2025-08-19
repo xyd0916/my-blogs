@@ -14,10 +14,10 @@ projects:
     desc: 系统核心功能包括遥感影像加载与预处理、浮游藻类指数计算与水华面积分级、基于LSTM与神经网络的时序分析与预测。采用 Python 技术栈（如 scikit-learn, PIL,OpenCV）模块化开发。
     link: "/projectAction/shygfx"
 
-  - icon: link
-    name: 链接名称
-    desc: 链接详细描述
-    link: https://链接地址
+  - icon: "/assets/icon/河流湖泊.png"
+    name: 基于WebGIS的湖泊生态预警管理系统
+    desc: 该系统采用 B/S 架构，前后端分离，以 Spring Boot 和 Vue3 为核心框架，用 MySQL 存储属性数据、PostgreSQL存储空间数据。实现了湖泊信息的实时管理与可视化，以EW-TOPSIS法综合评价湖泊健康，基于LSTM模型预测健康状况并动态预警，集成 DeepSeek 模型提供专业解答，支持公众举报。
+    link: "/projectAction/hpstyj"
 
   - icon: https://ts2.tc.mm.bing.net/th/id/OIP-C.Z9upUdbOLCMaQ5gXA3jmOAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3
     name: 目前在读：Spring实战
