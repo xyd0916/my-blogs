@@ -1,5 +1,5 @@
 ---
-icon: pen-to-square
+icon: "/assets/icon/typescript.png"
 date: 2022-01-10
 category:
   - 火龙果
@@ -9,12 +9,12 @@ tag:
   - 大
 ---
 
-# 火龙果
+# TypeScript
 
-## 标题 2
+## TS的简介
 
 这里是内容。
 
-### 标题 3
+### TS的快速入门
 
 这里是内容。

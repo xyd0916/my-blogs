@@ -3,6 +3,7 @@ import { photoSwipePlugin } from '@vuepress/plugin-photo-swipe'
 import { getDirname, path } from "vuepress/utils";
 import theme from "./theme.js";
 const __dirname = getDirname(import.meta.url);
+import { searchPlugin } from '@vuepress/plugin-search';
 
 export default defineUserConfig({
 
@@ -11,6 +12,15 @@ export default defineUserConfig({
   title: "带着黄昏出逃",
   description: "带着黄昏出逃 的博客演示",
 
+  plugins: [
+    searchPlugin({
+      locales: {
+        '/': {
+          placeholder: '搜索博文',
+        }
+      },
+    }),
+  ],
 
   theme,
  

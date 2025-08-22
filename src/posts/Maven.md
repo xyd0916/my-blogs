@@ -1,5 +1,5 @@
 ---
-icon: pen-to-square
+icon: "/assets/icon/maven.png"
 date: 2022-01-09
 category:
   - 前端
@@ -9,12 +9,12 @@ tag:
   - 圆
 ---
 
-# 樱桃
+# Maven入门
 
-## 标题 2
+## 简介
 
 这里是内容。
 
-### 标题 3
+### Maven的pom.xml
 
 这里是内容。

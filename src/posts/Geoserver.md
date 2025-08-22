@@ -1,6 +1,6 @@
 ---
 cover: /assets/images/GIS.png
-icon: pen-to-square
+icon: "/assets/icon/GeoServer.png"
 date: 2022-01-12
 category:
   - 蔬菜
@@ -11,9 +11,9 @@ star: 5
 sticky: true
 ---
 
-# 什么是GIS
+# Geoserver快速入门
 
-## 标题 2
+## 简介
 
 这里是内容。
 
