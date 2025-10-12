@@ -25,8 +25,8 @@ projects:
     link: https://www.epubit.com/bookDetails?id=UB7d862361ccf21&typeName=%E6%90%9C%E7%B4%A2
 
   - icon: newspaper
-    name: 文章名称
-    desc: 文章详细描述
+    name: 占位符
+    desc: 敬请期待我的集大成之作
     link: https://你的文章链接
 
   - icon: user-group

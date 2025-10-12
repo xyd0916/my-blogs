@@ -17,6 +17,9 @@ export default hopeTheme({
 
   docsDir: "src",
 
+  //网站图标
+  favicon: "/favicon.ico",
+
   // 导航栏
   navbar,
 
@@ -192,7 +195,7 @@ export default hopeTheme({
         ],
       },
     ],
-
+    
 
     components: {
       components: ["Badge", "VPCard"],
